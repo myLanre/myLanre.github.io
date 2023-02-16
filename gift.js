@@ -38,5 +38,5 @@ if (savedItems.length === 0) {
   // Update the prize and product image
   const prize = selectedItem.itemName;
   document.getElementById("prize").textContent = `Congratulations, you have won a Zenith Bank ${prize}`;
-  document.getElementById("product-image").src = `images/${prize}.jpg`;
+  document.getElementById("product-image").src = `../images/${prize}.jpg`;
 }
