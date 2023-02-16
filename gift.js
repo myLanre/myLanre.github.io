@@ -25,7 +25,7 @@ if (savedItems.length === 0) {
 
   retrievedList.innerHTML = tableHTML;
 
-  const prize = selectedItem.itemName;
-  document.getElementById("prize").textContent = `Congratulations, you have won a Zenith Bank ${prize}`;
-  document.getElementById("product-image").src = `images/${prize}.jpg`;
+  const prize = selectedItem.itemName.toLowerCase();
+document.getElementById("prize").textContent = `Congratulations, you have won a Zenith Bank ${prize}`;
+document.getElementById("product-image").src = `images/${prize}.jpg`;
 }
