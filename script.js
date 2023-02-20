@@ -4,6 +4,9 @@ const counter = document.querySelector("p");
 const countdownDuration = 4;
 //const randomIndex = Math.floor(Math.random() * redirectURLs.length);
 //const redirectUrl = redirectURLs[randomIndex];
+const savedItems = JSON.parse(localStorage.getItem("items") || "[]");
+
+
 
 let count = countdownDuration;
 
